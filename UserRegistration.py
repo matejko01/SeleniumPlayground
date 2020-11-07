@@ -1,11 +1,12 @@
 from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support.ui import Select
+import names
 
 path = r"D:\pliki\chromedriver.exe"
 
-first_name = "Luke"
-last_name = "Smith"
+first_name = names.get_first_name()
+last_name = names.get_last_name()
 email_address = f"{first_name}.{last_name}@mail.com"
 password = f"{first_name}'s password"
 address = "Elm Street 12/12"
